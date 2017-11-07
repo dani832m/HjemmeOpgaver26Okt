@@ -1,14 +1,14 @@
 /* OPGAVE 12.3
-
 Program der automatisk tildeler et array 100 værdier, lader brugeren indtaste en index-værdi og printer tallet, der
 er stored på valgte index. Hvis indtastning ikke lever op til arrayets index length, får brugeren en fejlbesked */
 
-package dk.n4;
+package dk.n4; //Package
 
 import java.util.Arrays; //Importerer klassen "Arrays" (til debugging)
 import java.util.Scanner; //Importerer klassen "Scanner"
 
-public class Opg12_3 {
+public class Opg12_3 { //Angiver access modifier og klassens navn
+//Læs mere om access modifiers her: https://www.tutorialspoint.com/java/java_access_modifiers.htm
 
     public static void main(String[] args) { //Main-metode eksekveres
 
