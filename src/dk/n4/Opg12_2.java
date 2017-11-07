@@ -1,16 +1,16 @@
 /* OPGAVE 12.2
-
 Lille program, der beder brugeren om at finde summen af to tilfældige tal. Hvis svaret er forkert, gives nyt forsøg.
 Da "Math.random" altid vil generere 0, hvis jeg caster den til "int", så deklarerer jeg number1 og number2 til at være
 "double" og caster senere disse variabler til at være "int". På den måde får brugeren ikke to kommatal, der skal udregnes.
 Hvis brugeren indtaster alt andet end heltal, så bliver det catched, og en fejlbesked udskrives i konsollen. */
 
-package dk.n4;
+package dk.n4; //Package
 
 import java.util.InputMismatchException; //Importerer klassen "InputMismatchException"
 import java.util.Scanner; //Importerer klassen "Scanner"
 
-public class Opg12_2 {
+public class Opg12_2 { //Angiver access modifier og klassens navn
+//Læs mere om modifiers her: https://www.tutorialspoint.com/java/java_access_modifiers.htm
 
     public static void main(String[] args) { //Main method køres
 
