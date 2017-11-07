@@ -1,5 +1,4 @@
 /* OPGAVE 12.24
-
 Opgavebeskrivelsen lyder:
 Create a data file with 1000 lines. Each line in the file consists of a faculty member's first name, last name, rank,
 and salary. The faculty member's first name and last name for the ith line are FirstNamei and LastNamei. The rank is
@@ -11,7 +10,7 @@ Sample data:    FirstName1 LastName1 Assistant 60055.95
                 ...
                 FirstName1000 LastName1000 Full 92255.21 */
 
-package dk.n4;
+package dk.n4; //Package
 
 //Importerer nødvendige klasser
 import java.io.File;
@@ -19,7 +18,8 @@ import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.util.Random;
 
-public class Opg12_24 {
+public class Opg12_24 { //Angiver access modifier og klassens navn
+//Læs mere om access modifiers her: https://www.tutorialspoint.com/java/java_access_modifiers.htm
 
     //Metode til senere brug
     public static String randomRankAndSalary() {
