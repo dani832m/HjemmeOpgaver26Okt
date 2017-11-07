@@ -7,8 +7,8 @@ Hvis brugeren indtaster alt andet end heltal, så bliver det catched, og en fejl
 
 package dk.n4;
 
-import java.util.InputMismatchException; //Importerer klassen InputMismatchException
-import java.util.Scanner; //Importerer Scanner-klassen
+import java.util.InputMismatchException; //Importerer klassen "InputMismatchException"
+import java.util.Scanner; //Importerer klassen "Scanner"
 
 public class Opg12_2 {
 
@@ -21,25 +21,25 @@ public class Opg12_2 {
 
         //Try-block afvikles
         try {
-            System.out.print("Læg de to tal sammen: ");
-            System.out.print((int)number1 + " + " + (int)number2 + " = ");
+            System.out.print("Læg de to tal sammen: "); //Tekst udskrives i konsollen
+            System.out.print((int)number1 + " + " + (int)number2 + " = "); //Udskiver de to variabler
             Scanner input = new Scanner(System.in); //Nyt scanner-objekt laves
             result = input.nextInt(); //Scanner-objekt initialiseres til at være "result"
 
             //While-løkke kører, så længe brugeren indtaster forkert løsning
             while (result != (int)number1 + (int)number2) {
-                System.out.print("Forkert, prøv igen. ");
-                System.out.print((int)number1 + " + " + (int)number2 + " = ");
-                result = input.nextInt();
+                System.out.print("Forkert, prøv igen. "); //Udskriver tekst i konsollen
+                System.out.print((int)number1 + " + " + (int)number2 + " = "); //Udskriver de to variabler
+                result = input.nextInt(); //Scanner-objekt initialiseres til at være "result"
             }
             System.out.println("Korrekt!"); //Printes, hvis brugeren taster korrekt løsning
-        }
+        } //Afslutter try-block
 
         //Hvis brugeren benytter sig af bogstaver eller andet, som ikke er integer, så bliver det catched
-        catch (InputMismatchException ex) {
+        catch (InputMismatchException ex) { //Catch i kategorien "InputMismatchException"
             System.out.println("Dit svar skal bestå af et helt tal."); //Fejlbesked printes
-        }
+        } //Catch-block afsluttes
         
-    }
+    } //Main afsluttes
 
-}
+} //Klassen afsluttes
