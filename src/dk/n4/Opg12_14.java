@@ -1,16 +1,15 @@
 /* OPGAVE 12.14
-
 Program, der kan udregne gennemsnit og samlet score baseret på indholdet i en .txt-fil, som brugeren selv angiver,
 hvor er placeret. */
 
-package dk.n4;
+package dk.n4; //Package
 
 import java.io.File; //Importerer File-klassen fra "java.io"
 import java.util.Scanner; //Importerer Scanner-klassen fra "java.util"
 
-public class Opg12_14 {
+public class Opg12_14 { //Angiver klassens access modifier og navn
 
-    public static void main(String[] args) throws Exception { //Bemærk: throws Exception
+    public static void main(String[] args) throws Exception { //Bemærk: "throws Exception"
 
         //Laver et nyt objekt i Scanner-klassen med variabelnavnet "input"
         Scanner input = new Scanner(System.in);
