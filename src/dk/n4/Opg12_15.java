@@ -1,17 +1,16 @@
 /* OPGAVE 12.15
-
 Opgavebeskrivelsen lyder:
 Write a program to create a file named Exercise12_15.txt if it does not exist. Write 120 integers created randomly into
 the file using text I/O. Integers are separated by spaces in the file. Read the data back from the file and display the
 data in increasing order. */
 
-package dk.n4;
+package dk.n4; //Package
 
 import java.util.Scanner; //Importerer klaassen "Scanner"
 
-public class Opg12_15 {
+public class Opg12_15 { //Angiver access modifier og klassens navn
 
-    public static void main(String[] args) throws Exception { //Main eksekveres - bemærk: throws Exception
+    public static void main(String[] args) throws Exception { //Main eksekveres - bemærk: "throws Exception"
 
         //SEKTION 1: Vi initialiserer et objekt (kaldet "file") i File-klassen til at være en .txt-fil
 
@@ -29,7 +28,7 @@ public class Opg12_15 {
               // Laver nyt PrintWriter-objekt og initialiserer det til at være vores file-objekt
               java.io.PrintWriter output = new java.io.PrintWriter(file) //Nu kan vi skrive til filen
         ) {
-            // Skriver 120 tilfældige int-værdier i filen vha. Math.random
+            // Skriver 120 tilfældige int-værdier i filen vha. "Math.random"
             double randomNo;
             for (int i = 0; i < 120; i++) {
                 randomNo = Math.random() * 150;
